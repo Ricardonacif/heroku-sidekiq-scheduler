@@ -13,4 +13,4 @@ Cool! Now all you need to do is create recurring rake tasks on Heroku Scheduler 
 bundle exec rake 'heroku_sidekiq:schedule_job[JobClassName,param1,param2]'
 ```
 
-That simple :D Heroku Schedule will take care of enqueing the jobs, your workers will take care of executing it, and you'll never have to deal with this code/Heroku App anymore, since it doesn't need to know anything about your real code. 
+That simple :D Heroku Schedule will take care of enqueing the jobs, your workers will take care of executing it, and you'll never have to deal with this code/Heroku App anymore, since it doesn't need to know anything about your real code. Also, we're using [sidekiq-unique-jobs gem] (https://github.com/mhenrixon/sidekiq-unique-jobs) to make sure the job is unique.
