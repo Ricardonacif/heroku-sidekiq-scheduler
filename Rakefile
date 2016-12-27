@@ -8,7 +8,7 @@ Sidekiq.configure_client do |config|
 end
 
 namespace :heroku_sidekiq do
-  desc "Schedule a sidekiq Job with parameters. Usage: rake 'heroku_sidekiq:schedule_job[JobClassName,param1,param2]'. All parameters are considered strings."
+  desc "Schedule a sidekiq Job with parameters. Usage: bundle exec rake 'heroku_sidekiq:schedule_job[JobClassName,param1,param2]'. All parameters are considered strings."
 
   task :schedule_job, [:job] do |task, args|
 
