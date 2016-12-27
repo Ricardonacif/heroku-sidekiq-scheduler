@@ -2,10 +2,10 @@
 
 Cool, so you use Sidekiq for background jobs, and now you want need some recurring jobs. This is a simple hack for not having to manage a crontab process, specific server for that or whatever. You'll need:
 
-1- Heroku account with a new heroku App
-2- On this App, get a free redis instance (Rediscloud will do it)
-3- Get also the Heroku Scheduler addon (why manage ourselves if we can trust Heroku for free?)
-4- Deploy this project to heroku
+1. Heroku account with a new heroku App
+2. On this App, get a free redis instance (Rediscloud will do it)
+3. Get also the Heroku Scheduler addon (why manage ourselves if we can trust Heroku for free?)
+4. Deploy this project to heroku
 
 
 Cool! Now all you need to do is create recurring rake tasks on Heroku Scheduler Dashboard like:
